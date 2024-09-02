@@ -15,9 +15,42 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    if(![scene isKindOfClass:[UIWindowScene class]]){
+        return;
+    }
+    UIWindowScene *windowScene = (UIWindowScene *) scene;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.windowScene = windowScene;
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[UIViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    CGFloat chessWidth = self.window.frame.size.width / 8;
+    NSArray *array = @[@"🚗",@"🐎",@"🐘",@"🫅",@"👸",@"🐘",@"🐎",@"车"];
+    for(int i = 0 ;i <array.count;i++){
+        for(int j = 0;j<array.count;j++){
+            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(i*chessWidth, j*chessWidth+50, chessWidth, chessWidth)];
+            if(i%2 == j%2){
+                label.backgroundColor = [UIColor blackColor];
+            } else{
+                label.backgroundColor = [UIColor whiteColor];
+            }
+            [self.window addSubview:label];
+            if(j == 0 || j ==7){
+                label.text = array[i];
+            }
+            if(j == 1 ||j == 6){
+                label.text = @"兵";
+            }
+            if(j == 0 || j ==7){
+                label.textColor = [UIColor redColor];
+            }
+            if(j == 1 ||j == 6){
+                label.textColor = [UIColor greenColor];
+            }
+            label.textAlignment = NSTextAlignmentCenter;
+            label.font = [UIFont boldSystemFontOfSize:20];
+        }
+    }
 }
 
 
