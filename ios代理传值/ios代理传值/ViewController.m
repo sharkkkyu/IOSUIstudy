@@ -7,15 +7,14 @@
 
 #import "ViewController.h"
 #import "secondViewController.h"
-//添加代理
-@interface ViewController () <TwoDelegate>
-{
-    UILabel *_label;
-}
+@interface ViewController ()<Twodelegate>
+
 @end
 
 @implementation ViewController
-
+{
+    UILabel *_label;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -36,6 +35,7 @@
 - (void) click {
     secondViewController *s = [[secondViewController alloc] init];
     s.delegate = self;
+    
     [self presentViewController:s animated:YES completion:nil];
 }
 //实现代理方法

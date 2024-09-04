@@ -16,8 +16,8 @@
 		A3B8951B2C8704AE00E35443 /* ios____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B8951A2C8704AE00E35443 /* ios____Tests.m */; };
 		A3B895252C8704AE00E35443 /* ios____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B895242C8704AE00E35443 /* ios____UITests.m */; };
 		A3B895272C8704AE00E35443 /* ios____UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B895262C8704AE00E35443 /* ios____UITestsLaunchTests.m */; };
-		A3B895372C8704F100E35443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B895342C8704F100E35443 /* ViewController.m */; };
-		A3B895382C8704F100E35443 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B895352C8704F100E35443 /* secondViewController.m */; };
+		A3B895842C88156F00E35443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B895802C88156F00E35443 /* ViewController.m */; };
+		A3B895852C88156F00E35443 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B895832C88156F00E35443 /* secondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		A3B895202C8704AE00E35443 /* ios代理传值UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios代理传值UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B895242C8704AE00E35443 /* ios____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ios____UITests.m"; sourceTree = "<group>"; };
 		A3B895262C8704AE00E35443 /* ios____UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ios____UITestsLaunchTests.m"; sourceTree = "<group>"; };
-		A3B895332C8704F100E35443 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../block传值/block传值/ViewController.h"; sourceTree = "<group>"; };
-		A3B895342C8704F100E35443 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../block传值/block传值/ViewController.m"; sourceTree = "<group>"; };
-		A3B895352C8704F100E35443 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = secondViewController.m; path = "../../block传值/block传值/secondViewController.m"; sourceTree = "<group>"; };
-		A3B895362C8704F100E35443 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = secondViewController.h; path = "../../block传值/block传值/secondViewController.h"; sourceTree = "<group>"; };
+		A3B895802C88156F00E35443 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3B895812C88156F00E35443 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		A3B895822C88156F00E35443 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3B895832C88156F00E35443 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +107,14 @@
 		A3B894FD2C8704AC00E35443 /* ios代理传值 */ = {
 			isa = PBXGroup;
 			children = (
+				A3B895812C88156F00E35443 /* secondViewController.h */,
+				A3B895832C88156F00E35443 /* secondViewController.m */,
+				A3B895822C88156F00E35443 /* ViewController.h */,
+				A3B895802C88156F00E35443 /* ViewController.m */,
 				A3B894FE2C8704AC00E35443 /* AppDelegate.h */,
 				A3B894FF2C8704AC00E35443 /* AppDelegate.m */,
 				A3B895012C8704AC00E35443 /* SceneDelegate.h */,
 				A3B895022C8704AC00E35443 /* SceneDelegate.m */,
-				A3B895362C8704F100E35443 /* secondViewController.h */,
-				A3B895352C8704F100E35443 /* secondViewController.m */,
-				A3B895332C8704F100E35443 /* ViewController.h */,
-				A3B895342C8704F100E35443 /* ViewController.m */,
 				A3B895072C8704AC00E35443 /* Main.storyboard */,
 				A3B8950A2C8704AE00E35443 /* Assets.xcassets */,
 				A3B8950C2C8704AE00E35443 /* LaunchScreen.storyboard */,
@@ -273,9 +273,9 @@
 			files = (
 				A3B895002C8704AC00E35443 /* AppDelegate.m in Sources */,
 				A3B895112C8704AE00E35443 /* main.m in Sources */,
+				A3B895842C88156F00E35443 /* ViewController.m in Sources */,
 				A3B895032C8704AC00E35443 /* SceneDelegate.m in Sources */,
-				A3B895382C8704F100E35443 /* secondViewController.m in Sources */,
-				A3B895372C8704F100E35443 /* ViewController.m in Sources */,
+				A3B895852C88156F00E35443 /* secondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

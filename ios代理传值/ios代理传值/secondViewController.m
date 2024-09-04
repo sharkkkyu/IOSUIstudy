@@ -36,7 +36,6 @@
     [self.view addSubview:_text];
 }
 -(void) click{
-    //让代理执行自己的方法，取得要传的值
     [self.delegate input:_text.text];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
