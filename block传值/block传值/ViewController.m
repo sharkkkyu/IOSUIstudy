@@ -7,7 +7,8 @@
 
 #import "ViewController.h"
 #import "secondViewController.h"
-@interface ViewController ()
+//添加代理
+@interface ViewController () <TwoDelegate>
 {
     UILabel *_label;
 }
@@ -34,9 +35,11 @@
 }
 - (void) click {
     secondViewController *s = [[secondViewController alloc] init];
-    s.myblock = ^(NSString *str){
-        self->_label.text = str;
-    };
+    s.delegate = self;
     [self presentViewController:s animated:YES completion:nil];
+}
+//实现代理方法
+-(void) input:(NSString *)text{
+    _label.text = text;
 }
 @end
