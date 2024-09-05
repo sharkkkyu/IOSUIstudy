@@ -6,7 +6,7 @@
 //
 
 #import "secondViewController.h"
-
+#import "SingleTon.h"
 @interface secondViewController ()
 {
     UITextField *_text;
@@ -36,8 +36,7 @@
     [self.view addSubview:_text];
 }
 -(void) click{
-    [self.delegate input:_text.text];
-    NSLog(@"%@",_text.text);
+    [SingleTon shareSingle].text = _text.text;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 /*
