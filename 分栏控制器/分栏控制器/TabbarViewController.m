@@ -24,13 +24,15 @@
 -(void) creatUI
 {
     NSArray *title = @[@"联系人",@"设置",@"动态",@"消息"];
+    NSArray *tabBarSystemItems = @[@(UITabBarSystemItemMore),@(UITabBarSystemItemHistory),@(UITabBarSystemItemContacts),@(UITabBarSystemItemDownloads)];
     NSArray *nameArray = @[@"oneViewController",@"twoViewController",@"threeViewController",@"fourViewController"];
     for(int i = 0 ;i < nameArray.count ; i++){
         Class cls = NSClassFromString(nameArray[i]);
         UIViewController *vc = [[cls alloc] init];
         UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
         vc.navigationItem.title = title[i];
-        nvc.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:i];
+        UITabBarSystemItem systemItem = [tabBarSystemItems[i] intValue];
+        nvc.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:systemItem tag:i];
         [self addChildViewController:nvc];
     }
 }
