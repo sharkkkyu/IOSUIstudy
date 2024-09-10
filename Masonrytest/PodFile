@@ -1,0 +1,4 @@
+platform :ios, '17.5'
+target 'Masonrytest' do   #
+pod 'Masonry' 
+end
