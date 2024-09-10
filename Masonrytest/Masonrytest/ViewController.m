@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import "Masonry/Masonry.h"
-
+#import <UserNotifications/UserNotifications.h>
 @interface ViewController ()
 
 @property (nonatomic, strong) UILabel *label;
@@ -44,10 +44,47 @@
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(50);
     }];
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+     [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound)
+                           completionHandler:^(BOOL granted, NSError * _Nullable error) {
+         if (granted) {
+             NSLog(@">> Notification permission granted");
+         } else {
+             NSLog(@">> Notification permission denied");
+         }
+     }];
+
 }
 
 - (void)buttonClicked:(UIButton *)sender {
     NSLog(@"Button Clicked!");
+    [self scheduleLocalNotification];
 }
-
+- (void)scheduleLocalNotification{
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        
+        // 创建通知内容
+        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+        content.title = @"提醒";
+        content.body = @"该去吃晚饭了！";
+        content.sound = [UNNotificationSound defaultSound];
+        
+        // 创建触发条件，10秒后触发
+        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:10 repeats:NO];
+        
+        // 创建请求标识符
+        NSString *identifier = @"LocalNotification";
+        
+        // 创建请求
+        UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:identifier content:content trigger:trigger];
+        
+        // 添加请求到通知中心
+        [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+            if (error != nil) {
+                NSLog(@"Error adding notification: %@", error.localizedDescription);
+            } else{
+                NSLog(@"success");
+            }
+        }];
+}
 @end

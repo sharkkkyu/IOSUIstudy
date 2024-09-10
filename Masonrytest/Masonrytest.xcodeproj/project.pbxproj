@@ -92,7 +92,6 @@
 				60FF8180511BCACE27BB026C /* Pods-Masonrytest.debug.xcconfig */,
 				41C303DAA5A2AAE075D61840 /* Pods-Masonrytest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -500,6 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 925C9626N5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Masonrytest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -527,6 +527,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 925C9626N5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Masonrytest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
