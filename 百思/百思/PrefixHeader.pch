@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//
+//  Created by xiaomage on 15/11/5.
+//  Copyright © 2015年 xiaomage. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+#ifdef __OBJC__
+
+/*** 日志 ***/
+#ifdef DEBUG
+#define DELog(...) NSLog(__VA_ARGS__)
+#else
+#define DELog(...)
+#endif
+
+#define DELogFunc DELog(@"%s", __func__);
+
+#endif // __OBJC__
+
+#endif // PrefixHeader_pch

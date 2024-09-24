@@ -1,0 +1,1027 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A31FC1BB7860F0207388190 /* Pods_baisiMyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFB946D2AAAB92C75851632 /* Pods_baisiMyTestTests.framework */; };
+		A33AC0172C9D37DE0062749A /* YSMFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC0162C9D37DE0062749A /* YSMFollowViewController.m */; };
+		A33AC01A2C9D37E80062749A /* YSMNEwViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC0192C9D37E80062749A /* YSMNEwViewController.m */; };
+		A33AC01D2C9D37F30062749A /* YSMEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC01C2C9D37F30062749A /* YSMEssenceViewController.m */; };
+		A33AC0202C9D37FF0062749A /* YSMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC01F2C9D37FF0062749A /* YSMMeViewController.m */; };
+		A33AC0272C9D777E0062749A /* YSMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC0262C9D777E0062749A /* YSMNavigationController.m */; };
+		A33AC02A2C9D78CF0062749A /* YSMRecommandFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC0292C9D78CF0062749A /* YSMRecommandFollowViewController.m */; };
+		A33AC02D2C9D79600062749A /* YSMsettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC02C2C9D79600062749A /* YSMsettingsViewController.m */; };
+		A33AC0782CA165B40062749A /* YSMFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33AC0772CA165B40062749A /* YSMFollowViewController.xib */; };
+		A33AC07F2CA174120062749A /* YSMloginregisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33AC07E2CA174120062749A /* YSMloginregisterViewController.xib */; };
+		A33AC0802CA174120062749A /* YSMloginregisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC07D2CA174120062749A /* YSMloginregisterViewController.m */; };
+		A33AC0842CA186120062749A /* YSMmeituanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC0832CA186120062749A /* YSMmeituanViewController.m */; };
+		A33AC0872CA2920D0062749A /* YSMListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC0862CA2920D0062749A /* YSMListViewController.m */; };
+		A33AC08A2CA2986E0062749A /* YSMPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33AC0892CA2986E0062749A /* YSMPageViewController.m */; };
+		A3A2F8FB2C9D294100E3B1BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F8FA2C9D294100E3B1BC /* AppDelegate.m */; };
+		A3A2F8FE2C9D294100E3B1BC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F8FD2C9D294100E3B1BC /* SceneDelegate.m */; };
+		A3A2F9042C9D294100E3B1BC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3A2F9032C9D294100E3B1BC /* Base */; };
+		A3A2F9062C9D294200E3B1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A2F9052C9D294200E3B1BC /* Assets.xcassets */; };
+		A3A2F9092C9D294200E3B1BC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3A2F9082C9D294200E3B1BC /* Base */; };
+		A3A2F90C2C9D294200E3B1BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F90B2C9D294200E3B1BC /* main.m */; };
+		A3A2F9162C9D294200E3B1BC /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F9152C9D294200E3B1BC /* __Tests.m */; };
+		A3A2F9202C9D294200E3B1BC /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F91F2C9D294200E3B1BC /* __UITests.m */; };
+		A3A2F9222C9D294200E3B1BC /* __UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F9212C9D294200E3B1BC /* __UITestsLaunchTests.m */; };
+		A3A2F9482C9D2AB600E3B1BC /* YSMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F9472C9D2AB600E3B1BC /* YSMTabBarViewController.m */; };
+		C40AE38B643138AC0611A3A8 /* Pods_baisiMyTest_baisiMyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700B4B626B0A25016F5CCCEE /* Pods_baisiMyTest_baisiMyTestUITests.framework */; };
+		C852C7AA058BE228C98334D1 /* Pods_baisiMyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A149CB94CCA9C71925E559C2 /* Pods_baisiMyTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3A2F9122C9D294200E3B1BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2F8EE2C9D294100E3B1BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A2F8F52C9D294100E3B1BC;
+			remoteInfo = "百思";
+		};
+		A3A2F91C2C9D294200E3B1BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2F8EE2C9D294100E3B1BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A2F8F52C9D294100E3B1BC;
+			remoteInfo = "百思";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07FEE16B93870D7074A955CD /* Pods-baisiMyTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisiMyTestTests.release.xcconfig"; path = "Target Support Files/Pods-baisiMyTestTests/Pods-baisiMyTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B2071D60BCFBCA22ADF0B6E /* libPods-百思.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		167C2D32A5A3361D2E3C3A0D /* Pods-baisiMyTest-baisiMyTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisiMyTest-baisiMyTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-baisiMyTest-baisiMyTestUITests/Pods-baisiMyTest-baisiMyTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		28A20215D78993B367ECF010 /* Pods-baisiMyTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisiMyTestTests.debug.xcconfig"; path = "Target Support Files/Pods-baisiMyTestTests/Pods-baisiMyTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BFB7B90417DB254DFC724B9 /* Pods-百思-百思UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思-百思UITests.release.xcconfig"; path = "Target Support Files/Pods-百思-百思UITests/Pods-百思-百思UITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C5FEF9D4D04602A092EBED3 /* Pods-baisiMyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisiMyTest.release.xcconfig"; path = "Target Support Files/Pods-baisiMyTest/Pods-baisiMyTest.release.xcconfig"; sourceTree = "<group>"; };
+		700B4B626B0A25016F5CCCEE /* Pods_baisiMyTest_baisiMyTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baisiMyTest_baisiMyTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFB946D2AAAB92C75851632 /* Pods_baisiMyTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baisiMyTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8540D6270963F5CF455FF663 /* Pods-百思.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思.release.xcconfig"; path = "Target Support Files/Pods-百思/Pods-百思.release.xcconfig"; sourceTree = "<group>"; };
+		A149CB94CCA9C71925E559C2 /* Pods_baisiMyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baisiMyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33AC0152C9D37DE0062749A /* YSMFollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMFollowViewController.h; sourceTree = "<group>"; };
+		A33AC0162C9D37DE0062749A /* YSMFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMFollowViewController.m; sourceTree = "<group>"; };
+		A33AC0182C9D37E80062749A /* YSMNEwViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMNEwViewController.h; sourceTree = "<group>"; };
+		A33AC0192C9D37E80062749A /* YSMNEwViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMNEwViewController.m; sourceTree = "<group>"; };
+		A33AC01B2C9D37F30062749A /* YSMEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMEssenceViewController.h; sourceTree = "<group>"; };
+		A33AC01C2C9D37F30062749A /* YSMEssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMEssenceViewController.m; sourceTree = "<group>"; };
+		A33AC01E2C9D37FF0062749A /* YSMMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMMeViewController.h; sourceTree = "<group>"; };
+		A33AC01F2C9D37FF0062749A /* YSMMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMMeViewController.m; sourceTree = "<group>"; };
+		A33AC0212C9D3CCB0062749A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A33AC0252C9D777E0062749A /* YSMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMNavigationController.h; sourceTree = "<group>"; };
+		A33AC0262C9D777E0062749A /* YSMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMNavigationController.m; sourceTree = "<group>"; };
+		A33AC0282C9D78CF0062749A /* YSMRecommandFollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMRecommandFollowViewController.h; sourceTree = "<group>"; };
+		A33AC0292C9D78CF0062749A /* YSMRecommandFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMRecommandFollowViewController.m; sourceTree = "<group>"; };
+		A33AC02B2C9D79600062749A /* YSMsettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMsettingsViewController.h; sourceTree = "<group>"; };
+		A33AC02C2C9D79600062749A /* YSMsettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMsettingsViewController.m; sourceTree = "<group>"; };
+		A33AC0772CA165B40062749A /* YSMFollowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YSMFollowViewController.xib; sourceTree = "<group>"; };
+		A33AC07C2CA174120062749A /* YSMloginregisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMloginregisterViewController.h; sourceTree = "<group>"; };
+		A33AC07D2CA174120062749A /* YSMloginregisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMloginregisterViewController.m; sourceTree = "<group>"; };
+		A33AC07E2CA174120062749A /* YSMloginregisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YSMloginregisterViewController.xib; sourceTree = "<group>"; };
+		A33AC0822CA186120062749A /* YSMmeituanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMmeituanViewController.h; sourceTree = "<group>"; };
+		A33AC0832CA186120062749A /* YSMmeituanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMmeituanViewController.m; sourceTree = "<group>"; };
+		A33AC0852CA2920D0062749A /* YSMListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMListViewController.h; sourceTree = "<group>"; };
+		A33AC0862CA2920D0062749A /* YSMListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMListViewController.m; sourceTree = "<group>"; };
+		A33AC0882CA2986E0062749A /* YSMPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMPageViewController.h; sourceTree = "<group>"; };
+		A33AC0892CA2986E0062749A /* YSMPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMPageViewController.m; sourceTree = "<group>"; };
+		A3A2F8F62C9D294100E3B1BC /* baisiMyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisiMyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2F8F92C9D294100E3B1BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3A2F8FA2C9D294100E3B1BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3A2F8FC2C9D294100E3B1BC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		A3A2F8FD2C9D294100E3B1BC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		A3A2F9032C9D294100E3B1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3A2F9052C9D294200E3B1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3A2F9082C9D294200E3B1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3A2F90A2C9D294200E3B1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A2F90B2C9D294200E3B1BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3A2F9112C9D294200E3B1BC /* baisiMyTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baisiMyTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2F9152C9D294200E3B1BC /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		A3A2F91B2C9D294200E3B1BC /* baisiMyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baisiMyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2F91F2C9D294200E3B1BC /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
+		A3A2F9212C9D294200E3B1BC /* __UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITestsLaunchTests.m; sourceTree = "<group>"; };
+		A3A2F9462C9D2AB600E3B1BC /* YSMTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMTabBarViewController.h; sourceTree = "<group>"; };
+		A3A2F9472C9D2AB600E3B1BC /* YSMTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMTabBarViewController.m; sourceTree = "<group>"; };
+		A5E12C8FF4AC7DA85853BCC1 /* Pods-baisiMyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisiMyTest.debug.xcconfig"; path = "Target Support Files/Pods-baisiMyTest/Pods-baisiMyTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B726C9B0D853E376BCD8B72A /* Pods-百思.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思.debug.xcconfig"; path = "Target Support Files/Pods-百思/Pods-百思.debug.xcconfig"; sourceTree = "<group>"; };
+		B746B1C1AC161301423413B2 /* Pods-baisiMyTest-baisiMyTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisiMyTest-baisiMyTestUITests.release.xcconfig"; path = "Target Support Files/Pods-baisiMyTest-baisiMyTestUITests/Pods-baisiMyTest-baisiMyTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D3DC2CBD993A644DF2561201 /* Pods-百思-百思UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思-百思UITests.debug.xcconfig"; path = "Target Support Files/Pods-百思-百思UITests/Pods-百思-百思UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBFFE70942952AB49408EE45 /* Pods-百思Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思Tests.debug.xcconfig"; path = "Target Support Files/Pods-百思Tests/Pods-百思Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8A185F39C6839DEF32848E1 /* Pods-百思Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思Tests.release.xcconfig"; path = "Target Support Files/Pods-百思Tests/Pods-百思Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3A2F8F32C9D294100E3B1BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C852C7AA058BE228C98334D1 /* Pods_baisiMyTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2F90E2C9D294200E3B1BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A31FC1BB7860F0207388190 /* Pods_baisiMyTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2F9182C9D294200E3B1BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40AE38B643138AC0611A3A8 /* Pods_baisiMyTest_baisiMyTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D950BCD74F25483C47D0EA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B2071D60BCFBCA22ADF0B6E /* libPods-百思.a */,
+				A149CB94CCA9C71925E559C2 /* Pods_baisiMyTest.framework */,
+				700B4B626B0A25016F5CCCEE /* Pods_baisiMyTest_baisiMyTestUITests.framework */,
+				7EFB946D2AAAB92C75851632 /* Pods_baisiMyTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		309614DCCC794D427EEC5651 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B726C9B0D853E376BCD8B72A /* Pods-百思.debug.xcconfig */,
+				8540D6270963F5CF455FF663 /* Pods-百思.release.xcconfig */,
+				D3DC2CBD993A644DF2561201 /* Pods-百思-百思UITests.debug.xcconfig */,
+				2BFB7B90417DB254DFC724B9 /* Pods-百思-百思UITests.release.xcconfig */,
+				DBFFE70942952AB49408EE45 /* Pods-百思Tests.debug.xcconfig */,
+				E8A185F39C6839DEF32848E1 /* Pods-百思Tests.release.xcconfig */,
+				A5E12C8FF4AC7DA85853BCC1 /* Pods-baisiMyTest.debug.xcconfig */,
+				5C5FEF9D4D04602A092EBED3 /* Pods-baisiMyTest.release.xcconfig */,
+				167C2D32A5A3361D2E3C3A0D /* Pods-baisiMyTest-baisiMyTestUITests.debug.xcconfig */,
+				B746B1C1AC161301423413B2 /* Pods-baisiMyTest-baisiMyTestUITests.release.xcconfig */,
+				28A20215D78993B367ECF010 /* Pods-baisiMyTestTests.debug.xcconfig */,
+				07FEE16B93870D7074A955CD /* Pods-baisiMyTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A33AC0812CA185FF0062749A /* meituan-美团 */ = {
+			isa = PBXGroup;
+			children = (
+				A33AC0822CA186120062749A /* YSMmeituanViewController.h */,
+				A33AC0832CA186120062749A /* YSMmeituanViewController.m */,
+			);
+			path = "meituan-美团";
+			sourceTree = "<group>";
+		};
+		A3A2F8ED2C9D294100E3B1BC = {
+			isa = PBXGroup;
+			children = (
+				A3A2F8F82C9D294100E3B1BC /* 百思 */,
+				A3A2F9142C9D294200E3B1BC /* 百思Tests */,
+				A3A2F91E2C9D294200E3B1BC /* 百思UITests */,
+				A3A2F8F72C9D294100E3B1BC /* Products */,
+				309614DCCC794D427EEC5651 /* Pods */,
+				1D950BCD74F25483C47D0EA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3A2F8F72C9D294100E3B1BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F8F62C9D294100E3B1BC /* baisiMyTest.app */,
+				A3A2F9112C9D294200E3B1BC /* baisiMyTestTests.xctest */,
+				A3A2F91B2C9D294200E3B1BC /* baisiMyTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3A2F8F82C9D294100E3B1BC /* 百思 */ = {
+			isa = PBXGroup;
+			children = (
+				A33AC0812CA185FF0062749A /* meituan-美团 */,
+				A33AC0212C9D3CCB0062749A /* PrefixHeader.pch */,
+				A3A2F9332C9D29D000E3B1BC /* Other-其他 */,
+				A3A2F9322C9D29AD00E3B1BC /* Follow-关注 */,
+				A3A2F9312C9D29A600E3B1BC /* New-新帖 */,
+				A3A2F9302C9D299800E3B1BC /* Essence-精华 */,
+				A3A2F92E2C9D294800E3B1BC /* Me-我 */,
+				A3A2F9022C9D294100E3B1BC /* Main.storyboard */,
+				A3A2F9052C9D294200E3B1BC /* Assets.xcassets */,
+				A3A2F9072C9D294200E3B1BC /* LaunchScreen.storyboard */,
+				A3A2F90A2C9D294200E3B1BC /* Info.plist */,
+				A3A2F90B2C9D294200E3B1BC /* main.m */,
+			);
+			path = "百思";
+			sourceTree = "<group>";
+		};
+		A3A2F9142C9D294200E3B1BC /* 百思Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F9152C9D294200E3B1BC /* __Tests.m */,
+			);
+			path = "百思Tests";
+			sourceTree = "<group>";
+		};
+		A3A2F91E2C9D294200E3B1BC /* 百思UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F91F2C9D294200E3B1BC /* __UITests.m */,
+				A3A2F9212C9D294200E3B1BC /* __UITestsLaunchTests.m */,
+			);
+			path = "百思UITests";
+			sourceTree = "<group>";
+		};
+		A3A2F92E2C9D294800E3B1BC /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F9422C9D2A2700E3B1BC /* Controller */,
+				A3A2F9412C9D2A2300E3B1BC /* View */,
+				A3A2F9402C9D2A1F00E3B1BC /* Model */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		A3A2F9302C9D299800E3B1BC /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F93F2C9D2A1900E3B1BC /* Controller */,
+				A3A2F93E2C9D2A1300E3B1BC /* View */,
+				A3A2F93D2C9D2A0E00E3B1BC /* Model */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		A3A2F9312C9D29A600E3B1BC /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F93C2C9D2A0800E3B1BC /* Model */,
+				A3A2F93B2C9D2A0200E3B1BC /* Controller */,
+				A3A2F93A2C9D29FD00E3B1BC /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		A3A2F9322C9D29AD00E3B1BC /* Follow-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F9362C9D29E400E3B1BC /* Model */,
+				A3A2F9352C9D29DE00E3B1BC /* View */,
+				A3A2F9342C9D29D700E3B1BC /* Controller */,
+			);
+			path = "Follow-关注";
+			sourceTree = "<group>";
+		};
+		A3A2F9332C9D29D000E3B1BC /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F9392C9D29F600E3B1BC /* Controller */,
+				A3A2F9382C9D29F100E3B1BC /* View */,
+				A3A2F9372C9D29ED00E3B1BC /* Model */,
+			);
+			path = "Other-其他";
+			sourceTree = "<group>";
+		};
+		A3A2F9342C9D29D700E3B1BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A33AC0152C9D37DE0062749A /* YSMFollowViewController.h */,
+				A33AC0162C9D37DE0062749A /* YSMFollowViewController.m */,
+				A33AC0772CA165B40062749A /* YSMFollowViewController.xib */,
+				A33AC0282C9D78CF0062749A /* YSMRecommandFollowViewController.h */,
+				A33AC0292C9D78CF0062749A /* YSMRecommandFollowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3A2F9352C9D29DE00E3B1BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3A2F9362C9D29E400E3B1BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3A2F9372C9D29ED00E3B1BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3A2F9382C9D29F100E3B1BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3A2F9392C9D29F600E3B1BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F8F92C9D294100E3B1BC /* AppDelegate.h */,
+				A3A2F8FA2C9D294100E3B1BC /* AppDelegate.m */,
+				A3A2F8FC2C9D294100E3B1BC /* SceneDelegate.h */,
+				A3A2F8FD2C9D294100E3B1BC /* SceneDelegate.m */,
+				A3A2F9462C9D2AB600E3B1BC /* YSMTabBarViewController.h */,
+				A3A2F9472C9D2AB600E3B1BC /* YSMTabBarViewController.m */,
+				A33AC0252C9D777E0062749A /* YSMNavigationController.h */,
+				A33AC0262C9D777E0062749A /* YSMNavigationController.m */,
+				A33AC07C2CA174120062749A /* YSMloginregisterViewController.h */,
+				A33AC07D2CA174120062749A /* YSMloginregisterViewController.m */,
+				A33AC07E2CA174120062749A /* YSMloginregisterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3A2F93A2C9D29FD00E3B1BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3A2F93B2C9D2A0200E3B1BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A33AC0182C9D37E80062749A /* YSMNEwViewController.h */,
+				A33AC0192C9D37E80062749A /* YSMNEwViewController.m */,
+				A33AC0882CA2986E0062749A /* YSMPageViewController.h */,
+				A33AC0892CA2986E0062749A /* YSMPageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3A2F93C2C9D2A0800E3B1BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3A2F93D2C9D2A0E00E3B1BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3A2F93E2C9D2A1300E3B1BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3A2F93F2C9D2A1900E3B1BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A33AC01B2C9D37F30062749A /* YSMEssenceViewController.h */,
+				A33AC01C2C9D37F30062749A /* YSMEssenceViewController.m */,
+				A33AC0852CA2920D0062749A /* YSMListViewController.h */,
+				A33AC0862CA2920D0062749A /* YSMListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3A2F9402C9D2A1F00E3B1BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3A2F9412C9D2A2300E3B1BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3A2F9422C9D2A2700E3B1BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A33AC01E2C9D37FF0062749A /* YSMMeViewController.h */,
+				A33AC01F2C9D37FF0062749A /* YSMMeViewController.m */,
+				A33AC02B2C9D79600062749A /* YSMsettingsViewController.h */,
+				A33AC02C2C9D79600062749A /* YSMsettingsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3A2F8F52C9D294100E3B1BC /* baisiMyTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A2F9252C9D294200E3B1BC /* Build configuration list for PBXNativeTarget "baisiMyTest" */;
+			buildPhases = (
+				4A5F264B2AA0D9AF744AD6E0 /* [CP] Check Pods Manifest.lock */,
+				A3A2F8F22C9D294100E3B1BC /* Sources */,
+				A3A2F8F32C9D294100E3B1BC /* Frameworks */,
+				A3A2F8F42C9D294100E3B1BC /* Resources */,
+				8AC782CBF07891189FB4CFB4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = baisiMyTest;
+			productName = "百思";
+			productReference = A3A2F8F62C9D294100E3B1BC /* baisiMyTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3A2F9102C9D294200E3B1BC /* baisiMyTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A2F9282C9D294200E3B1BC /* Build configuration list for PBXNativeTarget "baisiMyTestTests" */;
+			buildPhases = (
+				B5CE43CB0F4605FF602B0FA1 /* [CP] Check Pods Manifest.lock */,
+				A3A2F90D2C9D294200E3B1BC /* Sources */,
+				A3A2F90E2C9D294200E3B1BC /* Frameworks */,
+				A3A2F90F2C9D294200E3B1BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A2F9132C9D294200E3B1BC /* PBXTargetDependency */,
+			);
+			name = baisiMyTestTests;
+			productName = "百思Tests";
+			productReference = A3A2F9112C9D294200E3B1BC /* baisiMyTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3A2F91A2C9D294200E3B1BC /* baisiMyTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A2F92B2C9D294200E3B1BC /* Build configuration list for PBXNativeTarget "baisiMyTestUITests" */;
+			buildPhases = (
+				97CE18CD602A1010DF7804EA /* [CP] Check Pods Manifest.lock */,
+				A3A2F9172C9D294200E3B1BC /* Sources */,
+				A3A2F9182C9D294200E3B1BC /* Frameworks */,
+				A3A2F9192C9D294200E3B1BC /* Resources */,
+				B8873F0F78C4D869836D0222 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A2F91D2C9D294200E3B1BC /* PBXTargetDependency */,
+			);
+			name = baisiMyTestUITests;
+			productName = "百思UITests";
+			productReference = A3A2F91B2C9D294200E3B1BC /* baisiMyTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3A2F8EE2C9D294100E3B1BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = YSM;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A3A2F8F52C9D294100E3B1BC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A3A2F9102C9D294200E3B1BC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A3A2F8F52C9D294100E3B1BC;
+					};
+					A3A2F91A2C9D294200E3B1BC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A3A2F8F52C9D294100E3B1BC;
+					};
+				};
+			};
+			buildConfigurationList = A3A2F8F12C9D294100E3B1BC /* Build configuration list for PBXProject "baisiMyTest" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3A2F8ED2C9D294100E3B1BC;
+			productRefGroup = A3A2F8F72C9D294100E3B1BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3A2F8F52C9D294100E3B1BC /* baisiMyTest */,
+				A3A2F9102C9D294200E3B1BC /* baisiMyTestTests */,
+				A3A2F91A2C9D294200E3B1BC /* baisiMyTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3A2F8F42C9D294100E3B1BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A2F9062C9D294200E3B1BC /* Assets.xcassets in Resources */,
+				A3A2F9092C9D294200E3B1BC /* Base in Resources */,
+				A3A2F9042C9D294100E3B1BC /* Base in Resources */,
+				A33AC0782CA165B40062749A /* YSMFollowViewController.xib in Resources */,
+				A33AC07F2CA174120062749A /* YSMloginregisterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2F90F2C9D294200E3B1BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2F9192C9D294200E3B1BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A5F264B2AA0D9AF744AD6E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baisiMyTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC782CBF07891189FB4CFB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-baisiMyTest/Pods-baisiMyTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-baisiMyTest/Pods-baisiMyTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-baisiMyTest/Pods-baisiMyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CE18CD602A1010DF7804EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baisiMyTest-baisiMyTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5CE43CB0F4605FF602B0FA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-baisiMyTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8873F0F78C4D869836D0222 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-baisiMyTest-baisiMyTestUITests/Pods-baisiMyTest-baisiMyTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-baisiMyTest-baisiMyTestUITests/Pods-baisiMyTest-baisiMyTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-baisiMyTest-baisiMyTestUITests/Pods-baisiMyTest-baisiMyTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3A2F8F22C9D294100E3B1BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33AC0272C9D777E0062749A /* YSMNavigationController.m in Sources */,
+				A3A2F9482C9D2AB600E3B1BC /* YSMTabBarViewController.m in Sources */,
+				A3A2F8FB2C9D294100E3B1BC /* AppDelegate.m in Sources */,
+				A33AC08A2CA2986E0062749A /* YSMPageViewController.m in Sources */,
+				A33AC0202C9D37FF0062749A /* YSMMeViewController.m in Sources */,
+				A3A2F90C2C9D294200E3B1BC /* main.m in Sources */,
+				A33AC01A2C9D37E80062749A /* YSMNEwViewController.m in Sources */,
+				A33AC0842CA186120062749A /* YSMmeituanViewController.m in Sources */,
+				A33AC02A2C9D78CF0062749A /* YSMRecommandFollowViewController.m in Sources */,
+				A33AC01D2C9D37F30062749A /* YSMEssenceViewController.m in Sources */,
+				A33AC02D2C9D79600062749A /* YSMsettingsViewController.m in Sources */,
+				A33AC0172C9D37DE0062749A /* YSMFollowViewController.m in Sources */,
+				A33AC0802CA174120062749A /* YSMloginregisterViewController.m in Sources */,
+				A33AC0872CA2920D0062749A /* YSMListViewController.m in Sources */,
+				A3A2F8FE2C9D294100E3B1BC /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2F90D2C9D294200E3B1BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A2F9162C9D294200E3B1BC /* __Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2F9172C9D294200E3B1BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A2F9222C9D294200E3B1BC /* __UITestsLaunchTests.m in Sources */,
+				A3A2F9202C9D294200E3B1BC /* __UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3A2F9132C9D294200E3B1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A2F8F52C9D294100E3B1BC /* baisiMyTest */;
+			targetProxy = A3A2F9122C9D294200E3B1BC /* PBXContainerItemProxy */;
+		};
+		A3A2F91D2C9D294200E3B1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A2F8F52C9D294100E3B1BC /* baisiMyTest */;
+			targetProxy = A3A2F91C2C9D294200E3B1BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3A2F9022C9D294100E3B1BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3A2F9032C9D294100E3B1BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3A2F9072C9D294200E3B1BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3A2F9082C9D294200E3B1BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3A2F9232C9D294200E3B1BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A3A2F9242C9D294200E3B1BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3A2F9262C9D294200E3B1BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E12C8FF4AC7DA85853BCC1 /* Pods-baisiMyTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 925C9626N5;
+				ENABLE_ONLY_ACTIVE_RESOURCES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "百思/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "百思/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yusongmin.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3A2F9272C9D294200E3B1BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5FEF9D4D04602A092EBED3 /* Pods-baisiMyTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 925C9626N5;
+				ENABLE_ONLY_ACTIVE_RESOURCES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "百思/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "百思/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yusongmin.--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3A2F9292C9D294200E3B1BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A20215D78993B367ECF010 /* Pods-baisiMyTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yusongmin.--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baisiMyTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/baisiMyTest";
+			};
+			name = Debug;
+		};
+		A3A2F92A2C9D294200E3B1BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07FEE16B93870D7074A955CD /* Pods-baisiMyTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yusongmin.--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baisiMyTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/baisiMyTest";
+			};
+			name = Release;
+		};
+		A3A2F92C2C9D294200E3B1BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 167C2D32A5A3361D2E3C3A0D /* Pods-baisiMyTest-baisiMyTestUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yusongmin.--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "百思";
+			};
+			name = Debug;
+		};
+		A3A2F92D2C9D294200E3B1BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B746B1C1AC161301423413B2 /* Pods-baisiMyTest-baisiMyTestUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yusongmin.--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "百思";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3A2F8F12C9D294100E3B1BC /* Build configuration list for PBXProject "baisiMyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A2F9232C9D294200E3B1BC /* Debug */,
+				A3A2F9242C9D294200E3B1BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A2F9252C9D294200E3B1BC /* Build configuration list for PBXNativeTarget "baisiMyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A2F9262C9D294200E3B1BC /* Debug */,
+				A3A2F9272C9D294200E3B1BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A2F9282C9D294200E3B1BC /* Build configuration list for PBXNativeTarget "baisiMyTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A2F9292C9D294200E3B1BC /* Debug */,
+				A3A2F92A2C9D294200E3B1BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A2F92B2C9D294200E3B1BC /* Build configuration list for PBXNativeTarget "baisiMyTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A2F92C2C9D294200E3B1BC /* Debug */,
+				A3A2F92D2C9D294200E3B1BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3A2F8EE2C9D294100E3B1BC /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_baisiMyTest {
+  umbrella header "Pods-baisiMyTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
