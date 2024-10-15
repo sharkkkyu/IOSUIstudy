@@ -8,6 +8,9 @@
 #import "YSMloginregisterViewController.h"
 
 @interface YSMloginregisterViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *LoginButtonQQ;
+@property (weak, nonatomic) IBOutlet UIButton *LoginButtonSina;
+@property (weak, nonatomic) IBOutlet UIButton *LoginButtonTencent;
 
 @end
 
@@ -15,14 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.LoginButtonQQ setImage:[UIImage imageNamed:@"login_QQ_icon_click"] forState:UIControlStateHighlighted];
+    [self.LoginButtonQQ setImage:[UIImage imageNamed:@"login_QQ_icon"] forState:UIControlStateNormal];
+    [self.LoginButtonSina setImage:[UIImage imageNamed:@"login_sina_icon_click"] forState:UIControlStateHighlighted];
+    [self.LoginButtonSina setImage:[UIImage imageNamed:@"login_sina_icon"] forState:UIControlStateNormal];
+    [self.LoginButtonTencent setImage:[UIImage imageNamed:@"login_tecent_icon_click"] forState:UIControlStateHighlighted];
+    [self.LoginButtonTencent setImage:[UIImage imageNamed:@"login_tecent_icon"] forState:UIControlStateNormal];
 }
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
-}
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 /*
 #pragma mark - Navigation

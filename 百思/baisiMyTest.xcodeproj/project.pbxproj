@@ -31,6 +31,7 @@
 		A3A2F9202C9D294200E3B1BC /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F91F2C9D294200E3B1BC /* __UITests.m */; };
 		A3A2F9222C9D294200E3B1BC /* __UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F9212C9D294200E3B1BC /* __UITestsLaunchTests.m */; };
 		A3A2F9482C9D2AB600E3B1BC /* YSMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F9472C9D2AB600E3B1BC /* YSMTabBarViewController.m */; };
+		A3AAB75C2CA562060047A644 /* YSMquickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AAB75B2CA562060047A644 /* YSMquickLoginButton.m */; };
 		C40AE38B643138AC0611A3A8 /* Pods_baisiMyTest_baisiMyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700B4B626B0A25016F5CCCEE /* Pods_baisiMyTest_baisiMyTestUITests.framework */; };
 		C852C7AA058BE228C98334D1 /* Pods_baisiMyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A149CB94CCA9C71925E559C2 /* Pods_baisiMyTest.framework */; };
 /* End PBXBuildFile section */
@@ -105,6 +106,8 @@
 		A3A2F9212C9D294200E3B1BC /* __UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITestsLaunchTests.m; sourceTree = "<group>"; };
 		A3A2F9462C9D2AB600E3B1BC /* YSMTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMTabBarViewController.h; sourceTree = "<group>"; };
 		A3A2F9472C9D2AB600E3B1BC /* YSMTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMTabBarViewController.m; sourceTree = "<group>"; };
+		A3AAB75A2CA562060047A644 /* YSMquickLoginButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSMquickLoginButton.h; sourceTree = "<group>"; };
+		A3AAB75B2CA562060047A644 /* YSMquickLoginButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMquickLoginButton.m; sourceTree = "<group>"; };
 		A5E12C8FF4AC7DA85853BCC1 /* Pods-baisiMyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisiMyTest.debug.xcconfig"; path = "Target Support Files/Pods-baisiMyTest/Pods-baisiMyTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B726C9B0D853E376BCD8B72A /* Pods-百思.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思.debug.xcconfig"; path = "Target Support Files/Pods-百思/Pods-百思.debug.xcconfig"; sourceTree = "<group>"; };
 		B746B1C1AC161301423413B2 /* Pods-baisiMyTest-baisiMyTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baisiMyTest-baisiMyTestUITests.release.xcconfig"; path = "Target Support Files/Pods-baisiMyTest-baisiMyTestUITests/Pods-baisiMyTest-baisiMyTestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -324,6 +327,8 @@
 		A3A2F9382C9D29F100E3B1BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3AAB75A2CA562060047A644 /* YSMquickLoginButton.h */,
+				A3AAB75B2CA562060047A644 /* YSMquickLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -673,6 +678,7 @@
 				A33AC02A2C9D78CF0062749A /* YSMRecommandFollowViewController.m in Sources */,
 				A33AC01D2C9D37F30062749A /* YSMEssenceViewController.m in Sources */,
 				A33AC02D2C9D79600062749A /* YSMsettingsViewController.m in Sources */,
+				A3AAB75C2CA562060047A644 /* YSMquickLoginButton.m in Sources */,
 				A33AC0172C9D37DE0062749A /* YSMFollowViewController.m in Sources */,
 				A33AC0802CA174120062749A /* YSMloginregisterViewController.m in Sources */,
 				A33AC0872CA2920D0062749A /* YSMListViewController.m in Sources */,

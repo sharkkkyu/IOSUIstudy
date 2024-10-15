@@ -29,6 +29,7 @@
     }
     return _publishButton;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (@available(iOS 13.0, *)) {
