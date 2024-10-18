@@ -8,27 +8,38 @@
 #import "MessageTableViewController.h"
 #import "../SearchBar/SearchViewController.h"
 #import "../SearchBar/View/SearchDetailVC.h"
-@interface MessageTableViewController ()<UISearchControllerDelegate, UISearchBarDelegate>
+#import "View/CustomMenuView.h"
+#import "Pay/PayViewController.h"
+#import "ScanViewController.h"
+#import "addFriendsViewController.h"
+#import "message/GroupChatViewController.h"
+#import "View/MessageListViewCell.h"
+#import "MessageList.h"
+@interface MessageTableViewController ()<CustomMenuDelegate, UISearchControllerDelegate, UISearchBarDelegate>
 @property(strong, nonatomic) UISearchController *searchController;
 @property (strong, nonatomic)SearchViewController *searchVC;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSMutableArray *dataListArry;
-
+@property (strong, nonatomic) CustomMenuView *menu;
+@property (strong, nonatomic) MessageList *messageList;
 @end
 
 @implementation MessageTableViewController
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-//    [self initTabBarStyle];
+    [self initTabBarStyle];
     [self initTableViewStyle];
     [self initOtherStyle];
     [self initSearchController];
+    [self setupNavigationBarStyle];
+    [self initModel];
 }
-
+-(void)initModel {
+    self.messageList = [[MessageList alloc] init];
+    [self.messageList initMessageList];
+}
 //初始化样式
 -(void) initOtherStyle {
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"微信";
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitle:@"取消"];
 }
 
@@ -37,9 +48,41 @@
     self.tableView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:1.0];
 }
 
+- (void)setupNavigationBarStyle {
+    self.navigationItem.title = @"微信";
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"add"] style:UIBarButtonItemStylePlain target:self action:@selector(showMenuList)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+}
+
+-(void) showMenuList{
+    if(self.menu.isSeem) {
+        [self.menu removeFromSuperview];
+        self.menu.isSeem = NO;
+    } else {
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        [window addSubview:self.menu];
+        self.menu.isSeem = YES;
+    }
+}
+- (void)CustomMenu:(UITableView *)tableView didSelectedRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"select: %ld",indexPath.row);
+    NSArray *arr = @[@"messageViewViewController",@"addFriendsViewController",@"ScanViewController",@"PayViewController"];
+    Class viewControllerClass = NSClassFromString(arr[indexPath.row]);
+    UIViewController *vc = [[viewControllerClass alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+-(CustomMenuView *)menu {
+    if(!_menu) {
+        _menu = [[CustomMenuView alloc] initWithDataArr:@[@"发起群聊", @"添加朋友", @"扫一扫", @"收付款"] origin:CGPointMake(self.view.bounds.size.width - 125, self.navigationController.navigationBar.frame.origin.y+self.navigationController.navigationBar.frame.size.height) width:125 rowHeight:44];
+        _menu.delegate = self;
+        _menu.arrImgName = @[@"add_message", @"bar_add_friend", @"add_scan", @"add_pay"];
+        _menu.isSeem = NO;
+    }
+    return _menu;
+}
+
 //初始化tabbar样式
 -(void) initTabBarStyle {
-
     self.tabBarController.tabBar.hidden = NO;
     self.tabBarController.tabBar.translucent = YES;
     UITabBarAppearance *appearance = [[UITabBarAppearance alloc] init];
@@ -61,7 +104,6 @@
 
 //初始化SearchController
 - (void)initSearchController{
-    [self initData];
     self.searchVC = [[SearchViewController alloc]initWithNibName:@"SearchViewController" bundle:nil];
     //创建UISearchController
     self.searchController = [[UISearchController alloc]initWithSearchResultsController:self.searchVC];
@@ -70,8 +112,6 @@
     self.searchController.searchBar.delegate = self;
     [self.searchController.searchBar sizeToFit];
     self.searchController.searchBar.placeholder = @"搜索";
-    
-    
     //包着搜索框外层的颜色
     self.searchController.searchBar.tintColor = [UIColor colorWithRed:22.0/255 green:161.0/255 blue:1.0/255 alpha:1];
     if (@available(iOS 11.0, *)) {
@@ -86,54 +126,32 @@
     [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
 }
 
-//产生3个随机字母
-- (NSString *)shuffledAlphabet {
-    NSMutableArray * shuffledAlphabet = [NSMutableArray arrayWithArray:@[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z"]];
-    
-    NSString *strTest = [[NSString alloc]init];
-    for (int i=0; i<3; i++) {
-        int x = arc4random() % 25;
-        strTest = [NSString stringWithFormat:@"%@%@",strTest,shuffledAlphabet[x]];
-    }
-    return strTest;
-}
-
-//初始化数据
--(void) initData {
-    self.dataListArry = [NSMutableArray arrayWithCapacity:100];
-    //产生100个数字+三个随机字母
-    for (NSInteger i =0; i<100; i++) {
-        [self.dataListArry addObject:[NSString stringWithFormat:@"%ld%@",(long)i,[self shuffledAlphabet]]];
-    }
-}
-
 #pragma mark - tableView
 //设置区域的行数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.dataListArry count];
+    return 15;
 }
 
 //返回单元格内容
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    cell.backgroundColor = [UIColor whiteColor];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    
+    static NSString *identifier = @"MessageCell";
+    MessageListViewCell *cell = (MessageListViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+
+    if(!cell) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"MessageListViewCell" owner:self options:nil] firstObject];
     }
-    // 使用 attributedText 属性设置文本颜色为黑色
-    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:self.dataListArry[indexPath.row]];
-    [attributedText addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:NSMakeRange(0, attributedText.length)];
-    cell.textLabel.attributedText = attributedText;
-    UIView *backgroundView = [[UIView alloc] init];
-    backgroundView.backgroundColor = [UIColor whiteColor];
-    cell.backgroundView = backgroundView;
-    UIView *selectedBackgroundView = [[UIView alloc] init];
-    selectedBackgroundView.backgroundColor = [UIColor colorWithRed:216.0/255.0 green:223.0/255.0 blue:229.0 / 255.0 alpha:0.8]; // 你想要的颜色
-    cell.selectedBackgroundView = selectedBackgroundView;
+    cell.backgroundColor = [UIColor clearColor];
+    cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
+    cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:216.0/255.0 green:223.0/255.0 blue:229.0 / 255.0 alpha:0.8];
+    NSDictionary *message = self.messageList.messages[indexPath.row];
+    [cell configureWithMessage:message];
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
+}
 #pragma mark - UISearchBarDelegate
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
     [searchBar setShowsCancelButton:YES animated:YES];
@@ -158,16 +176,11 @@
     self.searchVC.view.frame = searchResultsFrame;
     self.tabBarController.tabBar.hidden = YES;
     self.edgesForExtendedLayout = UIRectEdgeTop;
-    NSLog(@"this is searchController %f,%f",self.searchController.view.frame.origin.y,self.searchController.view.frame.size.height);
-    NSLog(@"this is searchVC %f,%f",self.searchVC.view.frame.origin.y,self.searchVC.view.frame.size.height);
- 
-    
-
+    self.searchVC.dataListArry = self.messageList.nameList;
 }
 
 - (void)didPresentSearchController:(UISearchController *)searchController {
     NSLog(@"didPresentSearchController");
-    self.searchVC.dataListArry = self.dataListArry;
 }
 
 - (void)willDismissSearchController:(UISearchController *)searchController {

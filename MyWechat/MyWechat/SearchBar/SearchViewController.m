@@ -8,6 +8,7 @@
 #import "SearchViewController.h"
 #import "CustomTableViewCell.h"
 #import "SearchDetailVC.h"
+#import "View/searchResultTableViewCell.h"
 @interface SearchViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *searchList;
@@ -40,7 +41,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return self.searchList.count > 0 ? 44 : 200;
+    return self.searchList.count > 0 ? 70 : 200;
 }
 
 //点击搜索结果
@@ -52,13 +53,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (self.searchList.count > 0) {
         static NSString *identifier = @"cell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        searchResultTableViewCell *cell = (searchResultTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
         if (!cell) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+            cell = [[[NSBundle mainBundle]loadNibNamed:@"searchResultTableViewCell" owner:self options:nil] firstObject];
         }
         cell.textLabel.text = self.searchList[indexPath.row];
-        cell.textLabel.textColor = [UIColor redColor];
+        cell.imageView.image = [UIImage imageNamed:@"defaultUserIcon"];
+        cell.textLabel.textColor = [UIColor blackColor];
         tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        tableView.separatorColor = [UIColor lightGrayColor];
+        cell.backgroundColor = [UIColor clearColor];
+        cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
+        cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:216.0/255.0 green:223.0/255.0 blue:229.0 / 255.0 alpha:0.8];
         return cell;
     }else{
         CustomTableViewCell *cell = [[NSBundle mainBundle]loadNibNamed:@"CustomTableViewCell" owner:self options:nil][0];

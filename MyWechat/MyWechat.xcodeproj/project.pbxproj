@@ -29,6 +29,16 @@
 		A3B3333D2CBD1A14002CD6B9 /* SearchDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B3333B2CBD1A14002CD6B9 /* SearchDetailVC.xib */; };
 		A3B333412CBD1BB9002CD6B9 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B3333F2CBD1BB9002CD6B9 /* MessageTableViewController.m */; };
 		A3B333422CBD1BB9002CD6B9 /* MessageTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B333402CBD1BB9002CD6B9 /* MessageTableViewController.xib */; };
+		A3B333502CBF9B96002CD6B9 /* CustomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B3334F2CBF9B96002CD6B9 /* CustomMenuView.m */; };
+		A3B333572CBFC724002CD6B9 /* GroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B333562CBFC724002CD6B9 /* GroupChatViewController.m */; };
+		A3B3335A2CBFC72D002CD6B9 /* addFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B333592CBFC72D002CD6B9 /* addFriendsViewController.m */; };
+		A3B3335D2CBFC734002CD6B9 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B3335C2CBFC734002CD6B9 /* ScanViewController.m */; };
+		A3B333602CBFC73B002CD6B9 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B3335F2CBFC73B002CD6B9 /* PayViewController.m */; };
+		A3B333642CC105E1002CD6B9 /* MessageListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B333622CC105E1002CD6B9 /* MessageListViewCell.m */; };
+		A3B333652CC105E1002CD6B9 /* MessageListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B333632CC105E1002CD6B9 /* MessageListViewCell.xib */; };
+		A3B333682CC127D1002CD6B9 /* MessageList.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B333672CC127D1002CD6B9 /* MessageList.m */; };
+		A3B3336C2CC23E50002CD6B9 /* searchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B3336A2CC23E50002CD6B9 /* searchResultTableViewCell.m */; };
+		A3B3336D2CC23E50002CD6B9 /* searchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B3336B2CC23E50002CD6B9 /* searchResultTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +96,24 @@
 		A3B3333E2CBD1BB9002CD6B9 /* MessageTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTableViewController.h; sourceTree = "<group>"; };
 		A3B3333F2CBD1BB9002CD6B9 /* MessageTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
 		A3B333402CBD1BB9002CD6B9 /* MessageTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewController.xib; sourceTree = "<group>"; };
+		A3B3334E2CBF9B96002CD6B9 /* CustomMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomMenuView.h; sourceTree = "<group>"; };
+		A3B3334F2CBF9B96002CD6B9 /* CustomMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMenuView.m; sourceTree = "<group>"; };
+		A3B333552CBFC724002CD6B9 /* GroupChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupChatViewController.h; sourceTree = "<group>"; };
+		A3B333562CBFC724002CD6B9 /* GroupChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupChatViewController.m; sourceTree = "<group>"; };
+		A3B333582CBFC72D002CD6B9 /* addFriendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addFriendsViewController.h; sourceTree = "<group>"; };
+		A3B333592CBFC72D002CD6B9 /* addFriendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = addFriendsViewController.m; sourceTree = "<group>"; };
+		A3B3335B2CBFC734002CD6B9 /* ScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		A3B3335C2CBFC734002CD6B9 /* ScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		A3B3335E2CBFC73B002CD6B9 /* PayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		A3B3335F2CBFC73B002CD6B9 /* PayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		A3B333612CC105E1002CD6B9 /* MessageListViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageListViewCell.h; sourceTree = "<group>"; };
+		A3B333622CC105E1002CD6B9 /* MessageListViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageListViewCell.m; sourceTree = "<group>"; };
+		A3B333632CC105E1002CD6B9 /* MessageListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageListViewCell.xib; sourceTree = "<group>"; };
+		A3B333662CC127D1002CD6B9 /* MessageList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageList.h; sourceTree = "<group>"; };
+		A3B333672CC127D1002CD6B9 /* MessageList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageList.m; sourceTree = "<group>"; };
+		A3B333692CC23E50002CD6B9 /* searchResultTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchResultTableViewCell.h; sourceTree = "<group>"; };
+		A3B3336A2CC23E50002CD6B9 /* searchResultTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchResultTableViewCell.m; sourceTree = "<group>"; };
+		A3B3336B2CC23E50002CD6B9 /* searchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchResultTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +274,9 @@
 				A3B333392CBD1A14002CD6B9 /* SearchDetailVC.h */,
 				A3B3333A2CBD1A14002CD6B9 /* SearchDetailVC.m */,
 				A3B3333B2CBD1A14002CD6B9 /* SearchDetailVC.xib */,
+				A3B333692CC23E50002CD6B9 /* searchResultTableViewCell.h */,
+				A3B3336A2CC23E50002CD6B9 /* searchResultTableViewCell.m */,
+				A3B3336B2CC23E50002CD6B9 /* searchResultTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +294,10 @@
 		A3B333462CBE621A002CD6B9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A3B333542CBFC70F002CD6B9 /* Pay */,
+				A3B333532CBFC709002CD6B9 /* Scan */,
+				A3B333522CBFC703002CD6B9 /* addFriends */,
+				A3B333512CBFC6FA002CD6B9 /* message */,
 				A3B3333E2CBD1BB9002CD6B9 /* MessageTableViewController.h */,
 				A3B3333F2CBD1BB9002CD6B9 /* MessageTableViewController.m */,
 				A3B333402CBD1BB9002CD6B9 /* MessageTableViewController.xib */,
@@ -273,6 +308,11 @@
 		A3B333472CBE621F002CD6B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3B3334E2CBF9B96002CD6B9 /* CustomMenuView.h */,
+				A3B3334F2CBF9B96002CD6B9 /* CustomMenuView.m */,
+				A3B333612CC105E1002CD6B9 /* MessageListViewCell.h */,
+				A3B333622CC105E1002CD6B9 /* MessageListViewCell.m */,
+				A3B333632CC105E1002CD6B9 /* MessageListViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,8 +320,46 @@
 		A3B333482CBE6223002CD6B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3B333662CC127D1002CD6B9 /* MessageList.h */,
+				A3B333672CC127D1002CD6B9 /* MessageList.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A3B333512CBFC6FA002CD6B9 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				A3B333552CBFC724002CD6B9 /* GroupChatViewController.h */,
+				A3B333562CBFC724002CD6B9 /* GroupChatViewController.m */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		A3B333522CBFC703002CD6B9 /* addFriends */ = {
+			isa = PBXGroup;
+			children = (
+				A3B333582CBFC72D002CD6B9 /* addFriendsViewController.h */,
+				A3B333592CBFC72D002CD6B9 /* addFriendsViewController.m */,
+			);
+			name = addFriends;
+			sourceTree = "<group>";
+		};
+		A3B333532CBFC709002CD6B9 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A3B3335B2CBFC734002CD6B9 /* ScanViewController.h */,
+				A3B3335C2CBFC734002CD6B9 /* ScanViewController.m */,
+			);
+			name = Scan;
+			sourceTree = "<group>";
+		};
+		A3B333542CBFC70F002CD6B9 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				A3B3335E2CBFC73B002CD6B9 /* PayViewController.h */,
+				A3B3335F2CBFC73B002CD6B9 /* PayViewController.m */,
+			);
+			path = Pay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +469,8 @@
 				A3B332C82CBA1731002CD6B9 /* Assets.xcassets in Resources */,
 				A3B332CB2CBA1731002CD6B9 /* Base in Resources */,
 				A3B333382CBD19AC002CD6B9 /* CustomTableViewCell.xib in Resources */,
+				A3B333652CC105E1002CD6B9 /* MessageListViewCell.xib in Resources */,
+				A3B3336D2CC23E50002CD6B9 /* searchResultTableViewCell.xib in Resources */,
 				A3B333422CBD1BB9002CD6B9 /* MessageTableViewController.xib in Resources */,
 				A3B3332E2CBD14AE002CD6B9 /* SearchViewController.xib in Resources */,
 				A3B332C62CBA172F002CD6B9 /* Base in Resources */,
@@ -421,15 +501,23 @@
 				A3B332BD2CBA172F002CD6B9 /* AppDelegate.m in Sources */,
 				A3B3332D2CBD14AE002CD6B9 /* SearchViewController.m in Sources */,
 				A3B332CE2CBA1731002CD6B9 /* main.m in Sources */,
+				A3B333602CBFC73B002CD6B9 /* PayViewController.m in Sources */,
+				A3B333642CC105E1002CD6B9 /* MessageListViewCell.m in Sources */,
+				A3B3335D2CBFC734002CD6B9 /* ScanViewController.m in Sources */,
 				A3B333042CBA1C36002CD6B9 /* MeTableViewController.m in Sources */,
 				A3B333372CBD19AC002CD6B9 /* CustomTableViewCell.m in Sources */,
 				A3B332F42CBA1AA7002CD6B9 /* MainTabBarController.m in Sources */,
 				A3B333072CBA499F002CD6B9 /* MainNavigationController.m in Sources */,
+				A3B3336C2CC23E50002CD6B9 /* searchResultTableViewCell.m in Sources */,
+				A3B333502CBF9B96002CD6B9 /* CustomMenuView.m in Sources */,
+				A3B3335A2CBFC72D002CD6B9 /* addFriendsViewController.m in Sources */,
 				A3B333012CBA1C2A002CD6B9 /* DiscoveryTableViewController.m in Sources */,
 				A3B3333C2CBD1A14002CD6B9 /* SearchDetailVC.m in Sources */,
 				A3B332FE2CBA1C1D002CD6B9 /* ContactTableViewController.m in Sources */,
 				A3B332C02CBA172F002CD6B9 /* SceneDelegate.m in Sources */,
+				A3B333682CC127D1002CD6B9 /* MessageList.m in Sources */,
 				A3B333412CBD1BB9002CD6B9 /* MessageTableViewController.m in Sources */,
+				A3B333572CBFC724002CD6B9 /* GroupChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
