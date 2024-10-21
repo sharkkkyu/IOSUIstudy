@@ -12,6 +12,7 @@
 @property (assign, nonatomic) CGFloat width;
 @end
 @implementation CustomMenuView
+
 - (instancetype)initWithDataArr:(NSArray *)dataArr origin:(CGPoint)origin width:(CGFloat)width rowHeight:(CGFloat)rowHeight {
     self = [super initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     if(self) {

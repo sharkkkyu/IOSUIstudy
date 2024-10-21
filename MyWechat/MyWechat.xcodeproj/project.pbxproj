@@ -39,6 +39,7 @@
 		A3B333682CC127D1002CD6B9 /* MessageList.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B333672CC127D1002CD6B9 /* MessageList.m */; };
 		A3B3336C2CC23E50002CD6B9 /* searchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B3336A2CC23E50002CD6B9 /* searchResultTableViewCell.m */; };
 		A3B3336D2CC23E50002CD6B9 /* searchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B3336B2CC23E50002CD6B9 /* searchResultTableViewCell.xib */; };
+		A3B333732CC6478E002CD6B9 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B333722CC6478E002CD6B9 /* ScanView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		A3B333692CC23E50002CD6B9 /* searchResultTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchResultTableViewCell.h; sourceTree = "<group>"; };
 		A3B3336A2CC23E50002CD6B9 /* searchResultTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchResultTableViewCell.m; sourceTree = "<group>"; };
 		A3B3336B2CC23E50002CD6B9 /* searchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchResultTableViewCell.xib; sourceTree = "<group>"; };
+		A3B333712CC6478E002CD6B9 /* ScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanView.h; sourceTree = "<group>"; };
+		A3B333722CC6478E002CD6B9 /* ScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +316,8 @@
 				A3B333612CC105E1002CD6B9 /* MessageListViewCell.h */,
 				A3B333622CC105E1002CD6B9 /* MessageListViewCell.m */,
 				A3B333632CC105E1002CD6B9 /* MessageListViewCell.xib */,
+				A3B333712CC6478E002CD6B9 /* ScanView.h */,
+				A3B333722CC6478E002CD6B9 /* ScanView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 				A3B333012CBA1C2A002CD6B9 /* DiscoveryTableViewController.m in Sources */,
 				A3B3333C2CBD1A14002CD6B9 /* SearchDetailVC.m in Sources */,
 				A3B332FE2CBA1C1D002CD6B9 /* ContactTableViewController.m in Sources */,
+				A3B333732CC6478E002CD6B9 /* ScanView.m in Sources */,
 				A3B332C02CBA172F002CD6B9 /* SceneDelegate.m in Sources */,
 				A3B333682CC127D1002CD6B9 /* MessageList.m in Sources */,
 				A3B333412CBD1BB9002CD6B9 /* MessageTableViewController.m in Sources */,

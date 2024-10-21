@@ -33,10 +33,12 @@
     [self setupNavigationBarStyle];
     [self initModel];
 }
+
 -(void)initModel {
     self.messageList = [[MessageList alloc] init];
     [self.messageList initMessageList];
 }
+
 //初始化样式
 -(void) initOtherStyle {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -59,11 +61,14 @@
         [self.menu removeFromSuperview];
         self.menu.isSeem = NO;
     } else {
+        //把menu添加到根控制器，防止被导航挡住
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
         [window addSubview:self.menu];
         self.menu.isSeem = YES;
     }
 }
+
+//tableView代理方法，选中cell
 - (void)CustomMenu:(UITableView *)tableView didSelectedRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"select: %ld",indexPath.row);
     NSArray *arr = @[@"messageViewViewController",@"addFriendsViewController",@"ScanViewController",@"PayViewController"];
@@ -71,6 +76,8 @@
     UIViewController *vc = [[viewControllerClass alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+//初始化menu
 -(CustomMenuView *)menu {
     if(!_menu) {
         _menu = [[CustomMenuView alloc] initWithDataArr:@[@"发起群聊", @"添加朋友", @"扫一扫", @"收付款"] origin:CGPointMake(self.view.bounds.size.width - 125, self.navigationController.navigationBar.frame.origin.y+self.navigationController.navigationBar.frame.size.height) width:125 rowHeight:44];
@@ -168,7 +175,7 @@
 }
 
 #pragma mark - UISearchControllerDelegate代理
-//测试UISearchController的执行过程
+//UISearchController的执行过程
 - (void)willPresentSearchController:(UISearchController *)searchController {
     NSLog(@"willPresentSearchController");
     CGRect searchResultsFrame = self.searchVC.view.frame;
