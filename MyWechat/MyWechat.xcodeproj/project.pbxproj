@@ -40,6 +40,7 @@
 		A3B3336C2CC23E50002CD6B9 /* searchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B3336A2CC23E50002CD6B9 /* searchResultTableViewCell.m */; };
 		A3B3336D2CC23E50002CD6B9 /* searchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B3336B2CC23E50002CD6B9 /* searchResultTableViewCell.xib */; };
 		A3B333732CC6478E002CD6B9 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B333722CC6478E002CD6B9 /* ScanView.m */; };
+		A3B3337D2CC79FEF002CD6B9 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = A3B3337C2CC79FEF002CD6B9 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		A3B3336B2CC23E50002CD6B9 /* searchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchResultTableViewCell.xib; sourceTree = "<group>"; };
 		A3B333712CC6478E002CD6B9 /* ScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanView.h; sourceTree = "<group>"; };
 		A3B333722CC6478E002CD6B9 /* ScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanView.m; sourceTree = "<group>"; };
+		A3B3337C2CC79FEF002CD6B9 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,8 @@
 		A3B332BA2CBA172F002CD6B9 /* MyWechat */ = {
 			isa = PBXGroup;
 			children = (
+				A3B3337C2CC79FEF002CD6B9 /* index.html */,
+				A3B3337A2CC79D18002CD6B9 /* www */,
 				A3B333082CBA6389002CD6B9 /* SearchBar */,
 				A3B332F82CBA1BF2002CD6B9 /* Me */,
 				A3B332F72CBA1BE4002CD6B9 /* Discovery */,
@@ -367,6 +371,13 @@
 			path = Pay;
 			sourceTree = "<group>";
 		};
+		A3B3337A2CC79D18002CD6B9 /* www */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -475,6 +486,7 @@
 				A3B332CB2CBA1731002CD6B9 /* Base in Resources */,
 				A3B333382CBD19AC002CD6B9 /* CustomTableViewCell.xib in Resources */,
 				A3B333652CC105E1002CD6B9 /* MessageListViewCell.xib in Resources */,
+				A3B3337D2CC79FEF002CD6B9 /* index.html in Resources */,
 				A3B3336D2CC23E50002CD6B9 /* searchResultTableViewCell.xib in Resources */,
 				A3B333422CBD1BB9002CD6B9 /* MessageTableViewController.xib in Resources */,
 				A3B3332E2CBD14AE002CD6B9 /* SearchViewController.xib in Resources */,

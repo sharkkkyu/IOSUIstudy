@@ -43,6 +43,8 @@
 -(void) initOtherStyle {
     self.view.backgroundColor = [UIColor whiteColor];
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitle:@"取消"];
+    self.tableView.showsVerticalScrollIndicator = NO;
+    self.tableView.showsHorizontalScrollIndicator = NO;
 }
 
 //初始化tableView样式
